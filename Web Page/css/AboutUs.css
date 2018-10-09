@@ -1,0 +1,89 @@
+.banner-area {
+    background: url(../image/aboutusBg.png) center;
+    background-size: cover;
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../image/bg-pattern.png");
+}
+
+.about-content {
+    margin-top: 120px;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+hr.style {
+    height: 10px;
+    width: 200px;
+    margin: 10 auto;
+    border: 0;
+    box-shadow: 0 10px 15px -10px purple inset;
+}
+
+.ab-sub-body {
+    margin: 100px auto;
+}
+
+.vertical-text {
+    color: #0000b3;
+    font-size: 1.25em;
+    padding: 90px 0 0 35px;
+    text-align: right;
+    float: right;
+}
+
+
+
+.ab-sub-content {
+    padding-right: 60px;
+    padding-top: 70px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ab-sub-photo {
+    -webkit-box-shadow: 0px 0px 106px -19px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 0px 106px -19px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 0px 106px -19px rgba(0, 0, 0, 0.61);
+}
+
+.text-white a {
+    color: #fff;
+    margin: auto 8px;
+}
+
+.about-content h1 {
+    text-shadow: 4px 4px 5px rgba(30, 30, 30, 1);
+}
+
+.text-white a:hover {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: white;
+}
+
+.contentBg {
+    background-image: linear-gradient(to top, #051937, #00456c, #0078a0, #00aecd, #1ce7f0);
+}
