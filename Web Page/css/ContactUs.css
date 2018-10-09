@@ -1,0 +1,8 @@
+.banner-area {
+    background: url(../image/light-blue-backgrounds-2.jpg) center;
+    background-size: cover;
+}
+
+.gmap_canvas {
+    border-radius: 50px;
+}
