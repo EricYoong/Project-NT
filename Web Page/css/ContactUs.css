@@ -1,13 +1,5 @@
 .banner-area {
     background: url(../image/light-blue-backgrounds-2.jpg) center;
-    background-size: cover;
-}
-
-.ab-sub-body {
-    padding: 100px;
-    -webkit-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
-    -moz-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
-    box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
 }
 
 .contactMe {

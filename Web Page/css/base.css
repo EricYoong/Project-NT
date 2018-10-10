@@ -1,0 +1,139 @@
+section {
+    display: block !important;
+}
+
+/* navbar */
+#mainNav {
+    background-color: transparent !important;
+    padding: 10px 0;
+    font-size: 1.25em;
+    font-weight: bold;
+    /* -webkit-box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1); */
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../image/bg-pattern.png");
+}
+
+/* Info board */
+.sub-body {
+    padding: 100px;
+    -webkit-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+    box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+}
+
+.relative {
+    position: relative;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-content {
+    margin-top: 120px;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 4px 4px 5px rgba(30, 30, 30, 1);
+}
+
+hr.style-up {
+    height: 10px;
+    width: 200px;
+    margin: 10 auto;
+    border: 0;
+    box-shadow: 0 -10px 15px -10px purple inset;
+}
+
+hr.style-down {
+    height: 10px;
+    width: 200px;
+    margin: 10 auto;
+    border: 0;
+    box-shadow: 0 10px 15px -10px purple inset;
+}
+
+/* Your sysyem integration solution partner */
+.slogan {
+    font-family: 'Courgette',
+        cursive;
+}
+
+.text-white a {
+    color: #fff;
+    margin: auto 8px;
+}
+
+.text-white a:hover {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-image: linear-gradient(to top, #310048, #260e4c, #1a164e, #0c1c4e, #00214c);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.top-footer {
+    padding-top: 30px;
+}
+
+.hidden1 {
+    display: none;
+}
+
+.footerTitle {
+    text-align: center;
+}
+
+.footer-item li {
+    margin: 5px;
+}
+
+.btm-footer {
+    background-color: #220132;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #595959;
+    -webkit-box-shadow: 0px -8px 31px -10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px -8px 31px -10px rgba(0, 0, 0, 1);
+    box-shadow: 0px -8px 31px -10px rgba(0, 0, 0, 1);
+}
+
+.btm-footer p {
+    margin: 5px 0;
+}
