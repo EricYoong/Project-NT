@@ -3,6 +3,42 @@
     background-size: cover;
 }
 
-.gmap_canvas {
-    border-radius: 50px;
+.ab-sub-body {
+    padding: 100px;
+    -webkit-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+    box-shadow: inset 0px 29px 33px -20px rgba(0, 0, 0, 0.71);
+}
+
+.contactMe {
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.contactMe p {
+    font-size: 1.15em;
+}
+
+.contactMe p.addr span {
+    padding-left: 30px;
+}
+
+.contactMe p svg {
+    font-size: 1.5em;
+    color: #00214c !important;
+}
+
+.emailMe h1 {
+    padding-bottom: 26px;
+}
+
+.formMessage {
+    margin-bottom: 16px;
+}
+
+.google-map {
+    height: 700px;
+    -webkit-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
+    box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
 }
