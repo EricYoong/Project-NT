@@ -37,6 +37,91 @@ ul li a:hover {
     background: url("../image/bg-pattern.png");
 }
 
+/* Setting for padding */
+.section_padding_100_0 {
+    padding: 100px 0 0 0;
+}
+
+/* -------------------------
+:: 8.0 Portfolio Area for 
+    index and industries
+------------------------- */
+
+.portfolio-menu {
+    margin-bottom: 100px;
+    margin-top: -10px;
+}
+
+.portfolio-menu>p {
+    display: inline-block;
+    padding: 0 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+}
+
+.portfolio-menu>p:hover {
+    color: #4a7aec;
+}
+
+.single_gallery_item {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    z-index: 3;
+    position: relative;
+    overflow: hidden
+}
+
+.single_gallery_item>img {
+    width: 100%;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single_gallery_item:hover>img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="8" /></filter></svg>#filter');
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=8);
+}
+
+.gallery-hover-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    background-color: rgba(74, 122, 236, 0.85);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single_gallery_item:hover .gallery-hover-overlay {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.port-hover-text h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.port-hover-text>a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.mosh-portfolio {
+    margin: 50px 0;
+}
+
 /* Info board */
 .sub-body {
     padding: 100px;
@@ -80,6 +165,14 @@ hr.style-down {
     margin: 10 auto;
     border: 0;
     box-shadow: 0 10px 15px -10px purple inset;
+}
+
+hr.style-aline {
+    height: 10px;
+    width: 0px;
+    margin: 10 auto;
+    border-width: 4px;
+    border-color: purple;
 }
 
 /* Your sysyem integration solution partner */
