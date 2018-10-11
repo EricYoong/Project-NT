@@ -39,12 +39,6 @@
 }
 
 /* Third content */
-.third-content {
-    -webkit-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
-    -moz-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
-    box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71);
-}
-
 .tc-header {
     text-align: center;
     font-size: 60px;

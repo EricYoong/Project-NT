@@ -4,14 +4,68 @@ section {
 
 /* navbar */
 #mainNav {
-    background-color: transparent !important;
-    padding: 10px 0;
-    font-size: 1.25em;
+    background-color: transparent;
+    padding: 0 15px;
+    height: 120px;
     font-weight: bold;
-    /* -webkit-box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1);
-    box-shadow: 0px 14px 31px -10px rgba(0, 0, 0, 1); */
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms;
 }
+
+.nav-menu.is-scrolling,
+.nav-menu.menu-is-open {
+    background-color: rgb(74, 13, 143);
+    background: -moz-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+#nav .nav-link {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 0 15px;
+}
+
+.dropdown-menu.show {
+    border: none;
+    padding: 0;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #9597a6;
+}
+
+#nav .nav-link:hover,
+#nav .nav-item.active .nav-link,
+.dropdown-item:hover {
+    color: #003ecf;
+}
+
+.navbar-nav {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+/* Sticky CSS */
+
+.nav-menu.sticky {
+    background-image: linear-gradient(to top, #4973d6, #4c78e0, #507dea, #5383f5, #5788ff) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    height: 80px !important;
+    opacity: .9;
+    z-index: 999;
+}
+
+/* ================================================================================================================================= */
 
 ul {
     padding-left: 20px;
@@ -37,9 +91,37 @@ ul li a:hover {
     background: url("../image/bg-pattern.png");
 }
 
+.upper-content-shadow {
+    -webkit-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71) !important;
+    -moz-box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71) !important;
+    box-shadow: 0px 0px 33px 11px rgba(0, 0, 0, 0.71) !important;
+}
+
+.page-title .title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #8790af;
+    font-weight: 600;
+}
+
+.page-title .title:before,
+.page-title .title:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    background-color: #8790af;
+    margin: 0 15px;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
 /* Setting for padding */
 .section_padding_100_0 {
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 0 !important;
 }
 
 /* -------------------------
@@ -169,10 +251,67 @@ hr.style-down {
 
 hr.style-aline {
     height: 10px;
-    width: 0px;
-    margin: 10 auto;
+    width: 70px;
+    margin: 10px auto 10px auto;
     border-width: 4px;
     border-color: purple;
+}
+
+/*-- 18. Footer-Area --*/
+
+.footer-box {
+    text-align: center;
+
+}
+
+.footer-box .box-icon,
+.box-icon {
+    width: 75px;
+    height: 75px;
+    margin: auto auto 30px auto;
+    text-align: center;
+    line-height: 75px;
+    color: #ffffff;
+    font-size: 20px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
+    background: rgb(72, 44, 191);
+    /* Old browsers */
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.footer-box .box-icon:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s
+}
+
+.footer-box:hover .box-icon {
+    color: #5e88fc;
+}
+
+.footer-box:hover .box-icon:before {
+    background-color: #ffffff;
 }
 
 /* Your sysyem integration solution partner */

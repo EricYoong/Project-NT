@@ -3,21 +3,33 @@
 }
 
 .contactMe {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-bottom: 20px;
+    padding-left: 0;
 }
 
 .contactMe p {
     font-size: 1.15em;
 }
 
-.contactMe p.addr span {
-    padding-left: 30px;
-}
-
 .contactMe p svg {
     font-size: 1.5em;
     color: #00214c !important;
+}
+
+.footer-box .box-icon,
+.box-icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-p {
+    padding-left: 0;
 }
 
 .emailMe h1 {

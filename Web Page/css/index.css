@@ -25,10 +25,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: .25;
-    /* background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%); */
+    opacity: .4;
     background: #005596;
 }
 
@@ -36,8 +33,18 @@ body {
     margin-bottom: 0 !important;
 }
 
-.h-au-content h5 {
+.h-au-section {
+    padding-top: 250px !important;
+    padding-bottom: 250px !important;
+}
+
+.h-au-content h5,
+.h-au-content p.phase8-sub-title {
     color: rgb(112, 112, 112);
+}
+
+.h-au-content button {
+    margin-top: 40px;
 }
 
 .header {
@@ -69,6 +76,13 @@ body {
     transform: skewX(-20deg) !important;
 }
 
+.carousel-item img {
+    -webkit-filter: blur(4px);
+    /* Safari 6.0 - 9.0 */
+    filter: blur(4px);
+}
+
+/* 8Phases */
 .phases8-content {
     background-color: rgb(210, 225, 240);
 }
@@ -76,6 +90,10 @@ body {
 .phases8-content img {
     height: 150px;
     width: 500px;
+}
+
+.phase8-sub-title {
+    margin-bottom: 55px;
 }
 
 .image-content {
@@ -104,7 +122,7 @@ body {
     border-radius: 50%;
     margin-bottom: 1.5rem;
     background-color: #FFF;
-    color: #f5378e;
+    color: #8931d1;
     font-size: 48px;
     text-align: center;
     line-height: 80px;
@@ -115,10 +133,10 @@ body {
 }
 
 .circle-icon-hover {
-    background-image: -moz-linear-gradient(122deg, #e6388e 0%, #fb378e 100%) !important;
-    background-image: -webkit-linear-gradient(122deg, #e6388e 0%, #fb378e 100%) !important;
-    background-image: -ms-linear-gradient(122deg, #e6388e 0%, #fb378e 100%);
-    background-image: linear-gradient(122deg, #e6388e 0%, #fb378e 100%) !important;
+    background-image: -moz-linear-gradient(122deg, #8c00ff 0%, #7206ff 100%) !important;
+    background-image: -webkit-linear-gradient(122deg, #8c00ff 0%, #7206ff 100%) !important;
+    background-image: -ms-linear-gradient(122deg, #8c00ff 0%, #7206ff 100%);
+    background-image: linear-gradient(122deg, #8c00ff 0%, #7206ff 100%) !important;
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.09) !important;
     color: #FFF !important;
 }
@@ -149,3 +167,5 @@ img.long-arrow {
     width: 180px;
     height: 860px;
 }
+
+/* =================================================================================================================================================== */
