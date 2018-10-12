@@ -1,8 +1,3 @@
-body {
-    height: 100%;
-    width: 100%;
-}
-
 .banner-area {
     background: url(../image/blue\ background@4x.png) center;
     background-size: cover;
@@ -38,8 +33,8 @@ body {
     padding-bottom: 250px !important;
 }
 
-.h-au-content h5,
-.h-au-content p.phase8-sub-title {
+.sectionHeaderContent h5,
+.sectionHeaderContent p.phase8-sub-title {
     color: rgb(112, 112, 112);
 }
 

@@ -1,3 +1,8 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
 section {
     display: block !important;
 }
@@ -6,7 +11,6 @@ section {
 #mainNav {
     background-color: transparent;
     padding: 0 15px;
-    height: 120px;
     font-weight: bold;
     -webkit-transition-duration: 700ms;
     transition-duration: 700ms;
@@ -23,6 +27,13 @@ section {
     box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
 }
 
+.dropdown-menu a:focus {
+    color: rgb(0, 60, 172);
+    text-decoration: none;
+    background-color: #e6e6e6 !important;
+    outline: 0
+}
+
 #nav .nav-link {
     color: #fff;
     display: block;
@@ -34,7 +45,6 @@ section {
 
 .dropdown-menu.show {
     border: none;
-    padding: 0;
     box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -60,11 +70,34 @@ section {
 .nav-menu.sticky {
     background-image: linear-gradient(to top, #4973d6, #4c78e0, #507dea, #5383f5, #5788ff) !important;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    height: 80px !important;
-    opacity: .9;
+    position: fixed;
+    top: 0;
+    opacity: .95;
     z-index: 999;
 }
 
+@media (min-width: 320px) and (max-width:767px) {
+    /* .nav-menu {
+        padding: 0;
+        height: 80px;
+    } */
+
+    .sticky .navbar-toggler {
+        margin: 11px 0;
+    }
+
+    .nav-menu.sticky .navbar {
+        height: 70px;
+    }
+
+    #nav .nav-link {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+}
+
+/* end of nav bar */
 /* ================================================================================================================================= */
 
 ul {
@@ -80,6 +113,21 @@ ul li a {
 ul li a:hover {
     text-decoration: none;
     color: white;
+}
+
+.text-white a {
+    color: white;
+    margin: 0 5px;
+}
+
+.text-white a {
+    color: white;
+    text-decoration: none;
+}
+
+.slogan {
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
 }
 
 .overlay {
@@ -124,6 +172,8 @@ ul li a:hover {
     padding: 100px 0 0 0 !important;
 }
 
+/* End of setting for padding */
+/* ================================================================================================================================== */
 /* -------------------------
 :: 8.0 Portfolio Area for 
     index and industries
@@ -204,6 +254,8 @@ ul li a:hover {
     margin: 50px 0;
 }
 
+/* End of portfolio area */
+/* =================================================================================================================================== */
 /* Info board */
 .sub-body {
     padding: 100px;
@@ -257,7 +309,7 @@ hr.style-aline {
     border-color: purple;
 }
 
-/*-- 18. Footer-Area --*/
+/*-- Contact Us boxes and icon --*/
 
 .footer-box {
     text-align: center;
@@ -314,24 +366,10 @@ hr.style-aline {
     background-color: #ffffff;
 }
 
-/* Your sysyem integration solution partner */
-.slogan {
-    font-family: 'Courgette',
-        cursive;
-}
+/* End of contact us boxes and icon */
+/* =========================================================================================================== */
+/* Page Footer */
 
-.text-white a {
-    color: #fff;
-    margin: auto 8px;
-}
-
-.text-white a:hover {
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    color: white;
-}
-
-/* Footer */
 footer {
     background-image: linear-gradient(to top, #310048, #260e4c, #1a164e, #0c1c4e, #00214c);
     width: 100%;
@@ -369,3 +407,6 @@ footer {
 .btm-footer p {
     margin: 5px 0;
 }
+
+/* End of Footer */
+/* ================================================================================================================ */
