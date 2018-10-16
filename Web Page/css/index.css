@@ -61,14 +61,16 @@
 
 .headerBtn {
     float: right;
-    right: 330px;
+    right: 300px;
     top: 380px;
 }
 
-.headerBtn:before,
-.headerBtn:after {
-    -webkit-transform: skewX(-20deg) !important;
-    transform: skewX(-20deg) !important;
+.headerBtn span.arrowLeft {
+    margin: 0 20px;
+}
+
+.headerBtn span.btnText {
+    margin-right: 20px;
 }
 
 .carousel-item img {

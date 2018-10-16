@@ -12,6 +12,7 @@ section {
     background-color: transparent;
     padding: 0 15px;
     font-weight: bold;
+    height: 90px;
     -webkit-transition-duration: 700ms;
     transition-duration: 700ms;
 }
@@ -72,15 +73,16 @@ section {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     position: fixed;
     top: 0;
+    height: 70px !important;
     opacity: .95;
     z-index: 999;
 }
 
-@media (min-width: 320px) and (max-width:767px) {
-    /* .nav-menu {
+@media (min-width: 320px) and (max-width:990px) {
+    .nav-menu {
         padding: 0;
-        height: 80px;
-    } */
+        height: 198px !important;
+    }
 
     .sticky .navbar-toggler {
         margin: 11px 0;
@@ -96,6 +98,8 @@ section {
     }
 
 }
+
+@media (max-width: 767px) {}
 
 /* end of nav bar */
 /* ================================================================================================================================= */
